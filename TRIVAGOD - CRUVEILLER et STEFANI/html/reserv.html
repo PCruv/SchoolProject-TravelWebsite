@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="../js/scriptreserv.js"></script>
+    <script src="../js/scriptmain.js"></script>
+
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style_main2.css">
+    <title>TRIVΛGΘD</title>
+
+</head>
+<header>
+    <ul>
+        <li><a href="#" id="connexion" onclick="modal()">Connexion</a></li>
+        <li><a href="../html/panier.html">Mon panier</a></li>
+    </ul>
+</header>
+
+<body id=cnt onload="maj()">
+        <div class="background">
+                <div class="contenue">
+                <div class="fermer">x
+                </div>
+                <form>
+                
+                <input class="input1" type="name" id="pseudo" placeholder="pseudonyme"></input>
+                <input class="input1" type="password" id="mdp" placeholder="password"></input>
+                <div id="submitbutton">
+                <input class="buttonF" type="submit" value="connexion / inscription" id="submit" onclick="Info()">
+                </div>
+                
+                </form>
+                </div>
+                
+                </div>
+    <h1 onclick="window.location.href='../html/accueil.html';">TRIVΛGΘD</h1>
+    <h4>Un divin voyage à l'horizon</h4>
+
+    <hr/>
+
+    <h2 id="titre">Destination</h2>
+
+    <hr/>
+
+    <h3>Réservation:</h3>
+
+    <form onsubmit="urlRecap()" id="formulaire" onchange="cachebouton();prix()">
+
+        <div class="buttonF">
+            <legend>Informations Personnelles</legend>
+
+            <label for="prenom">Prénom</label> :
+            <input type="text" name="prenom" id="prenom" required>
+
+            <br>
+            <label for="nom">Nom</label> :
+            <input type="text" name="Nom" id="nom" required>
+
+            <br>
+            <label for="email">Email</label> :
+            <input type="email" name="mail" id="email" required>
+
+            <br/>
+            <label for="tel">Téléphone</label> :
+            <input type="tel" name="Téléphone" id="tel" pattern="[0-9]{10}" required>
+
+            <br/>
+        </div>
+
+
+        <div class="buttonF">
+            <legend>Informations de voyage</legend>
+            Date départ : <input type="date" name="Date départ" id="dateD" required>
+
+            <br> Date retour : <input type="date" name="Date arrivée" id="dateR" required>
+
+            <br> Nombre d'adultes : <input type="number" name="Nombre d'adultes" id="nombreA" min=1 required>
+
+            <br> Nombre d'enfants (moins de 12 ans) : <input type="number" name="Nombre d'enfants" id="nombreE" min=0 required>
+
+            <br> Petit-déjeuner inclus : <input type="checkbox" name="Petit-déjeuner" id="dej" required>
+
+            <br> Quelque chose que vous aimeriez nous faire savoir ?
+            <input type="text" name="à savoir" id="asavoir">
+        </div>
+
+        <br>
+        <div id="Cprix" class="buttonF">
+                Prix total :
+            
+                <div id="prix"></div>€
+        </div>
+
+
+        <div id="BoutonRez">
+            <input class="buttonR" type="submit" value="Réserver" id="submit">
+            <input class="buttonR" type="reset">
+        </div>
+
+    </form>
+    <br>
+
+    <footer class="buttonF">
+        <ul>
+            <li> <a href="../html/contact.html">Contact</a> </li>
+            <li><a href="../html/contact.html">A propos de TRIVΛGΘD</a></li>
+        </ul>
+    </footer>
+    
+    
+
+</body>

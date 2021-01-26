@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../js/scriptmain.js"></script>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style_main2.css">
+    <title>TRIVΛGΘD</title>
+
+</head>
+<header>
+    <ul>
+        <li><a href="#" id="connexion" onclick="modal()">Connexion</a></li>
+        <li><a href="../html/panier.html">Mon panier</a></li>
+    </ul>
+</header>
+
+
+<body id="cnt" onload="recap();maj()">
+        <div class="background">
+                <div class="contenue">
+                <div class="fermer">x
+                </div>
+                <form>
+                
+                <input class="input1" type="name" id="pseudo" placeholder="pseudonyme"></input>
+                <input class="input1" type="password" id="mdp" placeholder="password"></input>
+                <div id="submitbutton">
+                <input class="buttonF" type="submit" value="connexion / inscription" id="submit" onclick="Info()">
+                </div>
+                
+                </form>
+                </div>
+                
+                </div>
+    <h1 onclick="window.location.href='../html/accueil.html';">TRIVΛGΘD</h1>
+    <h4>Un divin voyage à l'horizon</h4>
+<hr/>
+
+    <h2 id="titre">Destination</h2>
+
+    <hr/>
+
+    <h3>Voici un récapitulatif de votre réservation :</h3>
+
+      <div class="buttonF">
+        <legend>Informations Personnelles</legend>
+            <div id="prenom"></div>
+            <br>
+            <div id="nom"></div>
+            <br>
+            <div id="mail"></div>
+            <br/>
+            <div id="tel"></div>
+            <br/>
+     </div>
+
+
+        <div class="buttonF">
+            <legend>Informations de voyage</legend>
+            <div id="dateD"></div>
+            <br>
+            <div id="dateR"></div>
+            <br>
+            <div id="nombreA"></div> 
+            <br>
+            <div id="nombreE"></div>
+            <br>
+            <div id="dej"></div>
+            <br>
+            <div id="asavoir"></div>
+            
+       </div>
+       <br>
+       <div class="buttonF">
+            <legend>Prix du voyage :</legend>
+            <div id="prix"></div>
+       </div>
+       <div class="buttonF">
+           <legend>Numéro de réservation :</legend>
+           <div id="NumRes"></div>
+       </div>
+       <br>
+       <button class="buttonR" id="bouton" onclick="ContrlLocalStorage();Storage(); ConfPanier();"> Ajouter au panier </button>
+       <div id="confPanier"></div>
+       <br>
+    </form>
+    <br>
+    <footer class="buttonF">
+        <ul>
+            <li> <a href="../html/contact.html">Contact</a> </li>
+            <li><a href="../html/contact.html">A propos de TRIVΛGΘD</a></li>
+        </ul>
+    </footer>
+    
+    
+
+
+</body>

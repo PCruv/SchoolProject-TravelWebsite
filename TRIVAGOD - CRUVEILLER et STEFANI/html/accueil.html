@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TRIVΛGΘD</title>
+    <script type="text/javascript" src="../js/scriptmain.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style_main1.css">
+</head>
+<header>
+    <ul>
+        <li><a href="#" id="connexion" onclick="modal()">Connexion</a></li>
+        <li><a href="../html/panier.html">Mon panier</a></li>
+    </ul>
+
+</header>
+
+<body>
+        <div class="background">
+                <div class="contenue">
+                <div class="fermer">x
+                </div>
+                <form>
+                
+                <input class="input1" type="name" id="pseudo" placeholder="pseudonyme"></input>
+                <input class="input1" type="password" id="mdp" placeholder="password"></input>
+                <div id="submitbutton">
+                <input class="buttonF" type="submit" value="connexion / inscription" id="submit" onclick="Info()">
+                </div>
+                
+                </form>
+                </div>
+                
+                </div>
+    <h1 onclick="window.location.href='../html/accueil.html';">TRIVΛGΘD
+    </h1>
+    <h4>un divin voyage à l'horizon</h4>
+    <hr class="style14">
+    <div onchange="filtrePrix()" class="buttonF">Filtre :
+        <br>
+         Prix Maximum :
+         <input id='PrixMax' type="number" size="30" style="width:120px;"> €
+         <br>
+         Prix Minimum : 
+        <input id='PrixMin' type="number" size="30" style="width:120px;"> € </div>
+    <h2 id="titre1">Destinations tendances</h2>
+    <div id="Népal" class="boite" >
+        <h3>Népal</h3>
+        <p>
+            <img src="../images/nepal1.jpg" alt="imageNépal" class=image height=400px length=400px>
+
+            <div class="prix">
+
+                <li style="float:right">
+                    Prix par jour par adulte : 100 €
+                    <button class="button" style="vertical-align:middle" onclick="window.location.href='preview.html?id=0';"><span> Voir l'offre</button></span>
+                    <button class="button" style="vertical-align:middle" onclick="window.location.href='reserv.html?id=0';"><span>Réserver</button></span>
+                </li>
+            </div>
+            <div id="meteo" onload="meteo('Népal')"></div>
+
+        </p>
+    </div>
+
+    <div id="Papouasie" class="boite">
+        <h3 style="text-align: center">Papouasie Nouvelle Guinée</h3>
+        <img src="../images/papouasie1.jpeg" alt="imagePapouasie" class=image height=400px length=400px>
+
+        <p>
+            <li class="float">
+                Prix par jour par adulte : 150 €
+                <button class="button" style="vertical-align: middle " onclick="window.location.href='preview.html?id=1';"><span> Voir l'offre</button></span>
+                <button class="button" style="vertical-align:middle" onclick="window.location.href='reserv.html?id=1';"><span>Réserver</button></span>
+            </li>
+        </p>
+
+    </div>
+    <a href="accueil.html" class="buttonF" id="hautdepage">Retour en haut de page</a>
+
+    <div id="Osaka" class="boite">
+            <h3 style="text-align: center">Osaka</h3>
+            <img src="../images/osakaA.jpg" alt="imageOsaka" class=image height=400px length=400px>
+    
+            <p>
+                <li class="float">
+                    Prix par jour par adulte : 230 €
+                    <button class="button" style="vertical-align: middle " onclick="window.location.href='preview.html?id=4';"><span> Voir l'offre</button></span>
+                    <button class="button" style="vertical-align:middle" onclick="window.location.href='reserv.html?id=4';"><span>Réserver</button></span>
+                </li>
+            </p>
+    
+        </div>
+
+    <h2 id='titre2'>Destinations de luxe</h2>
+    <div id="Dubaï" class="boite">
+        <h3 style="text-align: center"> Dubaï
+        </h3>
+        <img src="../images/dubaiA.jpg" alt="imageDubaï" class=image height=400px length=400px>        
+        <p>
+            <li class="float"> Prix par jour par adulte : 725 €
+
+                <button class="button" style="vertical-align: middle" onclick="window.location.href='preview.html?id=2';"><span> Voir l'offre</button></span>
+                <button class="button" style="vertical-align:middle" onclick="window.location.href='reserv.html?id=2';"><span>Réserver</button></span>
+
+            </li>
+        </p>
+    </div>
+    <div id="Las Vegas" class="boite">
+        <h3 style="text-align: center"> Las Vegas </h3>
+        <img src="../images/lasvegasA.jpg" alt="imageLasVegas" class=image height=400px length=400px>
+        <p>
+            <li class="float">
+                Prix par jour par adulte : 650 €
+                <button class="button" style="vertical-align: middle" onclick="window.location.href='preview.html?id=3';"><span> Voir l'offre</button></span>
+                <button class="button" style="vertical-align:middle" onclick="window.location.href='reserv.html?id=3';"><span>Réserver</button></span>
+
+            </li>
+            <br>
+        </p>
+    </div>
+    <div id="Moscou" class="boite">
+            <h3 style="text-align: center"> Moscou
+            </h3>
+            <img src="../images/moscouA.jpg" alt="imageMoscou" class=image height=400px length=400px>        
+            <p>
+                <li class="float"> Prix par jour par adulte : 600 €
+    
+                    <button class="button" style="vertical-align: middle" onclick="window.location.href='preview.html?id=5';"><span> Voir l'offre</button></span>
+                    <button class="button" style="vertical-align:middle" onclick="window.location.href='reserv.html?id=5';"><span>Réserver</button></span>
+    
+                </li>
+            </p>
+        </div>
+
+    <footer class="buttonF">
+        <ul>
+            <li><a href="../html/contact.html">Contact</a> </li>
+            <li><a href="../html/contact.html">A propos de TRIVΛGΘD</a></li>
+        </ul>
+        
+    </footer>
+    
+    
+
+
+
+
+
+</body>
+
+</html>
